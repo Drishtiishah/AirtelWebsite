@@ -2,12 +2,12 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import logo from '../Assets/Homepage/Logo.png'
 
 export default function MenuAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -33,10 +33,8 @@ export default function MenuAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Airtel
-          </Typography>
           
+          <img src={logo} alt={logo} component="div" sx={{ flexGrow: 1 }} class='center' />         
             <div>
               <IconButton
                 size="large"
@@ -51,6 +49,7 @@ export default function MenuAppBar() {
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}
+                align= 'right'
                 anchorOrigin={{
                   vertical: 'top',
                   horizontal: 'right',

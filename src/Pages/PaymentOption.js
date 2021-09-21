@@ -4,6 +4,7 @@ import ControlledAccordions from '../Components/PaymentOption/Accordion';
 import SimpleCard from '../Components/PaymentOption/Card1';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles({
     root: {
       minWidth: 275,

@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import image from '../../Assets/Homepage/airtellogo.png'
 
 const useStyles = makeStyles({
   root: {
@@ -26,6 +27,8 @@ export default function SimpleCard4() {
   return (
     <Card className={classes.root}>
       <CardContent>
+        <br/>
+        <img src={image} alt={image} align='left' />
         <Typography variant="h5" component="h2">
          Open an Airtel Money Wallet
         </Typography>
@@ -33,7 +36,6 @@ export default function SimpleCard4() {
          And get upto 40% cashback
         </Typography>
       </CardContent>
-      
     </Card>
   );
 }

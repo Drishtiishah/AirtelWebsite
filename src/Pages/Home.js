@@ -20,7 +20,7 @@ import ButtonLink2 from '../Components/Footer/Privacy';
 import ButtonLink3 from '../Components/Footer/Cookie';
 import ButtonLink4 from '../Components/Footer/DLT';
 import ButtonLink5 from '../Components/Footer/Contact';
-import Airtel from '../Assets/Airtel.png';
+import Airtel from '../Assets/Homepage/Airtel.png';
 import SingleLineImageList from '../Components/Homepage/Imagelist';
 
 export default function Home() {

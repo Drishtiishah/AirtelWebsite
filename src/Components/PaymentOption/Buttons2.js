@@ -1,6 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import image from '../../Assets/Payment/Airtelpay.png'
+import image2 from '../../Assets/Payment/GooglePay.png'
+import image3 from '../../Assets/Payment/paytm.png'
+import image4 from '../../Assets/Payment/more.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,17 +20,33 @@ export default function OutlinedButtons2() {
   return (
     <div className={classes.root}>
       <Button variant="outlined" color="secondary">
+      <img src={image} alt={image}/>
+      </Button>
+      <p>
         Airtel
-      </Button>
+        </p>
+
       <Button variant="outlined" color="secondary">
+      <img src={image2} alt={image2}/>
+      </Button>
+      <p>
         Google Pay
-      </Button>
+        </p>
+
       <Button variant="outlined" color="secondary">
+      <img src={image3} alt={image3}/>
+      </Button>
+      <p>
         Paytm 
-      </Button>
+        </p>
+
       <Button variant="outlined" color="secondary">
-        + other UPI Id
+      <img src={image4} alt={image4}/>
       </Button>
+      <p>
+        + other UPI Id
+        </p>
+
     </div>
   );
 }

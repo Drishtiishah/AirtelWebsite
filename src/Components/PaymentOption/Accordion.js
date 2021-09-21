@@ -9,6 +9,10 @@ import FormPropsTextFields from './Inputform';
 import OutlinedButtons from './Buttons';
 import OutlinedButtons2 from './Buttons2';
 import OutlinedButtons3 from './Buttons3';
+import image from '../../Assets/Payment/Creditcard.png'
+import image2 from '../../Assets/Payment/Net.png'
+import image3 from '../../Assets/Payment/UPI.png'
+import image4 from '../../Assets/Payment/Wallet.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,6 +45,7 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
+          <img src={image} alt={image} align="left"/>
           <Typography className={classes.heading}>Credit/Debit/ATM Card</Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -55,6 +60,7 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
+          <img src={image2} alt={image2} align="left"/>
           <Typography className={classes.heading}>Net Banking</Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -67,6 +73,7 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
+          <img src={image3} alt={image3} align="left"/>
           <Typography className={classes.heading}>UPI</Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -79,6 +86,7 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
+          <img src={image4} alt={image4} align="left"/>
           <Typography className={classes.heading}>Wallets</Typography>
         </AccordionSummary>
         <AccordionDetails>

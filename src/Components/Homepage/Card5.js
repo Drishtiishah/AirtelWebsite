@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import image from '../../Assets/AppStore.png'
-import image1 from '../../Assets/GooglePlay.png'
-import image3 from '../../Assets/Phone.png'
+import image from '../../Assets/Homepage/AppStore.png'
+import image1 from '../../Assets/Homepage/GooglePlay.png'
+import image3 from '../../Assets/Homepage/Phone.png'
 
 const useStyles = makeStyles({
   root: {

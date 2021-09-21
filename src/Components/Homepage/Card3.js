@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import AirtelBlackButton from './Airtelbutton';
-import image from '../../Assets/image.png'
+import image from '../../Assets/Homepage/image.png'
 
 const useStyles = makeStyles({
   root: {
@@ -14,7 +14,6 @@ const useStyles = makeStyles({
     display: 'inline-block',
     margin: '0 2px',
     transform: 'scale(0.8)',
-    backgroundColor:'black',
   },
   title: {
     fontSize: 14,

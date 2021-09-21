@@ -6,11 +6,11 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 //import itemData from './itemData';
-import image from './../../Assets/Loki.png';
-import image2 from './../../Assets/Rangbaaz.png';
-import image3 from './../../Assets/Stories.png';
-import image4 from './../../Assets/Bajirao.png';
-import image5 from './../../Assets/Herapheri.png';
+import image from './../../Assets/Homepage/Loki.png';
+import image2 from './../../Assets/Homepage/Rangbaaz.png';
+import image3 from './../../Assets/Homepage/Stories.png';
+import image4 from './../../Assets/Homepage/Bajirao.png';
+import image5 from './../../Assets/Homepage/Herapheri.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
