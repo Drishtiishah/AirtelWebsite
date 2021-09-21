@@ -20,11 +20,14 @@ import ButtonLink2 from '../Components/Footer/Privacy';
 import ButtonLink3 from '../Components/Footer/Cookie';
 import ButtonLink4 from '../Components/Footer/DLT';
 import ButtonLink5 from '../Components/Footer/Contact';
+import Airtel from '../Assets/Airtel.png';
+import SingleLineImageList from '../Components/Homepage/Imagelist';
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
+        <img src={Airtel} alt="airtel"/>
         <br/>
         <BasicTabs/>  
         <br/>
@@ -42,6 +45,8 @@ export default function Home() {
         <Typography variant="h5" component="h2">
           Entertainment
         </Typography>
+        <br/>
+        <SingleLineImageList/>
         <br/>
         <SimpleCard5/>
         <br/>

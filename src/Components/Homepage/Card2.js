@@ -27,15 +27,20 @@ export default function SimpleCard2() {
   return (
     <Card className={classes.root}>
       <CardContent>
+        <br/>
+        <br/>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Airtel Unlimited Postpaid
         </Typography>
+        <br/>
         <Typography variant="h5" component="h2">
           Airtel Postpaid starting at ₹499
         </Typography>
+        <br/>
         <ContainedButtons1/>
+        <br/>
+        <br/>
       </CardContent>
-      
     </Card>
   );
 }

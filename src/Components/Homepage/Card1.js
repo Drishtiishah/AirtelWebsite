@@ -27,13 +27,19 @@ export default function SimpleCard1() {
   return (
     <Card className={classes.root}>
       <CardContent>
+        <br/>
+        <br/>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Airtel Unlimited Prepaid
         </Typography>
+        <br/>
         <Typography variant="h5" component="h2">
           Talk Unlimited
         </Typography>
+        <br/>
         <ContainedButtons1/>
+        <br/>
+        <br/>
       </CardContent>
       
     </Card>
