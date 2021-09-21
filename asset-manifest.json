@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/AirtelWebsite/static/css/main.c0e48d28.chunk.css",
-    "main.js": "/AirtelWebsite/static/js/main.16e976db.chunk.js",
-    "main.js.map": "/AirtelWebsite/static/js/main.16e976db.chunk.js.map",
+    "main.css": "/AirtelWebsite/static/css/main.8927e407.chunk.css",
+    "main.js": "/AirtelWebsite/static/js/main.293ffcc1.chunk.js",
+    "main.js.map": "/AirtelWebsite/static/js/main.293ffcc1.chunk.js.map",
     "runtime-main.js": "/AirtelWebsite/static/js/runtime-main.366a34bc.js",
     "runtime-main.js.map": "/AirtelWebsite/static/js/runtime-main.366a34bc.js.map",
-    "static/js/2.a6ddcaef.chunk.js": "/AirtelWebsite/static/js/2.a6ddcaef.chunk.js",
-    "static/js/2.a6ddcaef.chunk.js.map": "/AirtelWebsite/static/js/2.a6ddcaef.chunk.js.map",
+    "static/js/2.1361dd7e.chunk.js": "/AirtelWebsite/static/js/2.1361dd7e.chunk.js",
+    "static/js/2.1361dd7e.chunk.js.map": "/AirtelWebsite/static/js/2.1361dd7e.chunk.js.map",
     "index.html": "/AirtelWebsite/index.html",
-    "static/css/main.c0e48d28.chunk.css.map": "/AirtelWebsite/static/css/main.c0e48d28.chunk.css.map",
-    "static/js/2.a6ddcaef.chunk.js.LICENSE.txt": "/AirtelWebsite/static/js/2.a6ddcaef.chunk.js.LICENSE.txt",
+    "static/css/main.8927e407.chunk.css.map": "/AirtelWebsite/static/css/main.8927e407.chunk.css.map",
+    "static/js/2.1361dd7e.chunk.js.LICENSE.txt": "/AirtelWebsite/static/js/2.1361dd7e.chunk.js.LICENSE.txt",
     "static/media/Airtel.2d063417.png": "/AirtelWebsite/static/media/Airtel.2d063417.png",
+    "static/media/Airtelpay.23efae34.jpg": "/AirtelWebsite/static/media/Airtelpay.23efae34.jpg",
     "static/media/Bajirao.f4362759.png": "/AirtelWebsite/static/media/Bajirao.f4362759.png",
     "static/media/Herapheri.f932d1c9.png": "/AirtelWebsite/static/media/Herapheri.f932d1c9.png",
     "static/media/Loki.b230d655.png": "/AirtelWebsite/static/media/Loki.b230d655.png",
+    "static/media/Paytm.2df6d303.jpg": "/AirtelWebsite/static/media/Paytm.2df6d303.jpg",
     "static/media/Rangbaaz.532820b3.png": "/AirtelWebsite/static/media/Rangbaaz.532820b3.png",
     "static/media/Stories.9ece6236.png": "/AirtelWebsite/static/media/Stories.9ece6236.png",
     "static/media/image.13b16c45.png": "/AirtelWebsite/static/media/image.13b16c45.png"
   },
   "entrypoints": [
     "static/js/runtime-main.366a34bc.js",
-    "static/js/2.a6ddcaef.chunk.js",
-    "static/css/main.c0e48d28.chunk.css",
-    "static/js/main.16e976db.chunk.js"
+    "static/js/2.1361dd7e.chunk.js",
+    "static/css/main.8927e407.chunk.css",
+    "static/js/main.293ffcc1.chunk.js"
   ]
 }
