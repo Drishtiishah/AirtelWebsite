@@ -10,14 +10,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TextButtons() {
+export default function ContainedButtons() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Button href="#text-buttons" color="primary">
-        View more
+      
+      <Button variant="contained" color="primary">
+        Switch to Airtel
       </Button>
+      
     </div>
   );
 }

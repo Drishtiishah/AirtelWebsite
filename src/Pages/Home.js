@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import BasicTextFields from '../Components/Homepage/TextField';
 import Typography from '@material-ui/core/Typography';
 import BasicTabs from '../Components/Homepage/Tabmenu';
 import SwipeableTextMobileStepper from '../Components/Homepage/Stepper';
@@ -31,7 +30,6 @@ export default function Home() {
         <br/>
         <BasicTabs/>  
         <br/>
-        <BasicTextFields/> 
         <SwipeableTextMobileStepper/>
         <br/>
         <SimpleCard1/>

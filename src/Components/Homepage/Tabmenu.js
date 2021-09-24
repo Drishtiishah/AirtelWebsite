@@ -4,6 +4,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import TextField from '@material-ui/core/TextField';
+import ContainedButtons from './Button1';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,6 +56,11 @@ export default function BasicTabs() {
           <Tab label="DTH" {...a11yProps(2)} />
           <Tab label="Broadband" {...a11yProps(2)} />
         </Tabs>
+        <br/>
+        <TextField id="outlined-basic" label="Mobile Number" variant="outlined" /> 
+        <br/><br/>
+      <ContainedButtons/>
+
       </Box>
     </Box>
   );

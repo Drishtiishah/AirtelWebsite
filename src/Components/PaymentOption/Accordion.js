@@ -6,13 +6,14 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import FormPropsTextFields from './Inputform';
-import OutlinedButtons from './Buttons';
-import OutlinedButtons2 from './Buttons2';
-import OutlinedButtons3 from './Buttons3';
 import image from '../../Assets/Payment/Creditcard.png'
 import image2 from '../../Assets/Payment/Net.png'
 import image3 from '../../Assets/Payment/UPI.png'
 import image4 from '../../Assets/Payment/Wallet.png'
+import CustomizedAccordions from './NetbankingAccordion';
+import CustomizedAccordions1 from './UPIAccordion';
+import CustomizedAccordions2 from './Wallets';
+import ContainedButton from './MakePayment';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,9 +50,9 @@ export default function ControlledAccordions() {
           <Typography className={classes.heading}>Credit/Debit/ATM Card</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
           <FormPropsTextFields/>
-          </Typography>
+          <div/>
+          <ContainedButton/>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -64,7 +65,7 @@ export default function ControlledAccordions() {
           <Typography className={classes.heading}>Net Banking</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <OutlinedButtons/>
+          <CustomizedAccordions/>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -77,7 +78,7 @@ export default function ControlledAccordions() {
           <Typography className={classes.heading}>UPI</Typography>
         </AccordionSummary>
         <AccordionDetails>
-        <OutlinedButtons2/>
+        <CustomizedAccordions1/>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -90,7 +91,7 @@ export default function ControlledAccordions() {
           <Typography className={classes.heading}>Wallets</Typography>
         </AccordionSummary>
         <AccordionDetails>
-        <OutlinedButtons3/>
+        <CustomizedAccordions2/>
         </AccordionDetails>
       </Accordion>
     </div>

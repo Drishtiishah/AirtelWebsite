@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import image3 from '../../Assets/Payment/Airtelpay.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -10,14 +10,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TextButtons() {
+export default function ContainedButtons1() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Button href="#text-buttons" color="primary">
-        View more
-      </Button>
+      <div className={classes.root}>
+      <img src={image3} alt={image3} />
+        Airtel
     </div>
   );
 }

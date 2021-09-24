@@ -1,17 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import Link from '@material-ui/core/Link';
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
-export default function ButtonLink() {
+export default function TextButton() {
   return (
-    <Link
-      component="button"
-      variant="body2"
-      onClick={() => {
-        console.info("I'm a button.");
-      }}
-    >
-      Back to top
-    </Link>
+     
+      <Button align="center">Back To Top</Button>
+     
   );
 }

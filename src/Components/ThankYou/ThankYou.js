@@ -54,7 +54,6 @@ export default function SimpleCard() {
         <br/>
         <Link1/>
         <br/>
-        <br/>
         <Link2/>
         <br/>
         <br/>

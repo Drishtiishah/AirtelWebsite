@@ -94,7 +94,6 @@ function SwipeableTextMobileStepper() {
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
-            Next
             {theme.direction === 'rtl' ? (
               <KeyboardArrowLeft />
             ) : (
