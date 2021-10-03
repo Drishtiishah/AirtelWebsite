@@ -1,80 +1,82 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
+import React from 'react';
+import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuIcon from '@mui/icons-material/Menu';
-import { pink } from '@mui/material/colors';
-export default function TemporaryDrawer() {
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import MenuIcon from '@material-ui/icons/Menu';
+
+const useStyles = makeStyles({
+  list: {
+    width: 350,
+  },
+  fullList: {
+    width: 'auto',
+  },
+});
+
+export default function SwipeableTemporaryDrawer() {
+  const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
-    left: true,
+    left: false,
     bottom: false,
     right: false,
   });
 
-  
   const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+    if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
 
     setState({ ...state, [anchor]: open });
   };
 
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        [theme.breakpoints.up('md')]: {
-  
-        margin: theme.spacing(12),
-        },
-      },
-    },
-  }));
-  
-
   const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+    <div
+      className={clsx(classes.list, {
+        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+      })}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['PREPAID', 'DTH', 'POSTPAID', 'BROADBAND','BANK','AIRTEL BLACK','HELP','XSTREAM','SIGN IN'].map((text, index) => (
+        {['Prepaid', 'DTH', 'Postpaid', 'Broadband', 'Bank', 'Airtel Bank', 'Help', 'Xstream'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 0 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
+            <ListItemIcon></ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
-    </Box>
+      <Divider />
+      <List>
+        {['Sign in'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemIcon></ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+      </List>
+    </div>
   );
 
   return (
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <MenuIcon onClick={toggleDrawer(anchor, true)}
-          sx={{ color: pink[700] }}
-          fontSize="large">
-           - {anchor}</MenuIcon>
-          <Drawer
+          <MenuIcon onClick={toggleDrawer(anchor, true)}>{anchor}</MenuIcon>
+          <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)} 
-            onOpen={toggleDrawer(anchor,true)}         
+            onClose={toggleDrawer(anchor, false)}
+            onOpen={toggleDrawer(anchor, true)}
           >
             {list(anchor)}
-          </Drawer>
+          </SwipeableDrawer>
         </React.Fragment>
       ))}
     </div>

@@ -7,7 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import ContainedButtonsR from './Button1'
+import InputAdornments from './Textfield';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -77,16 +77,16 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <ContainedButtonsR/>
+          <InputAdornments/>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Postpaid
+          <InputAdornments/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          DTH
+          <InputAdornments/>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          Broadband
+          <InputAdornments/>
         </TabPanel>
       </SwipeableViews>
     </Box>

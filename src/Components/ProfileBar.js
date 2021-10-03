@@ -8,7 +8,7 @@ import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined'
 import FormGroup from '@mui/material/FormGroup';
 import image from './../Assets/Homepage/Logo.png';
 import { pink } from '@mui/material/colors';
-import TemporaryDrawer from './Homepage/Drawer';
+import SwipeableTemporaryDrawer from './Homepage/Drawer';
 
 
 export default function MenuAppBar() {
@@ -38,7 +38,7 @@ export default function MenuAppBar() {
             sx={{ color: pink[700] }}
             
           >
-            <TemporaryDrawer/>
+            <SwipeableTemporaryDrawer/>
           </IconButton>
          
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

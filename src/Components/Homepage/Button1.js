@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import InputAdornments from './Textfield';
 
 
 
@@ -8,6 +8,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      maxWidth: 1200,
+      flexGrow: 1,
     },
   },
 }));
@@ -17,12 +19,7 @@ export default function ContainedButtonsR() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" color="primary" href="https://drishtiishah.github.io/AirtelWebsite/PaymentOption">
-        Recharge
-      </Button>
-    
-
-  
+      <InputAdornments/> 
     </div>
   );
 }
