@@ -23,7 +23,7 @@ export default function PaymentOption() {
     const classes = useStyles();
     return (
         <React.Fragment>
-
+<br/><br/><br/>
 <SimpleCard/>
 <br/>
 <Typography variant="h5" component="h2">
