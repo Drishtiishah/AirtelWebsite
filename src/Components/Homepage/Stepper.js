@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import {useTheme } from '@mui/material/styles';
 import MobileStepper from '@mui/material/MobileStepper';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -9,6 +8,7 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import { makeStyles } from '@material-ui/core/styles';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -26,8 +26,29 @@ const images = [
       'https://i.ibb.co/QMfRpgK/redplan.jpg',
   },
 ];
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 1200,
+    flexGrow: 1,
+  },
+  header: {
+    display: 'flex',
+    alignItems: 'center',
+    height: 0,
+    paddingLeft: theme.spacing(4),
+    backgroundColor: theme.palette.background.default,
+  },
+  img: {
+    height: '100%',
+    display: 'block',
+    maxWidth: 1200,
+    overflow: 'hidden',
+    width: '100%',
+  },
+}));
 
-function SwipeableTextMobileStepper() {
+function CarouselStepper() {
+  const classes = useStyles();
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -45,18 +66,8 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 1200, flexGrow: 1 }}>
-      <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'background.default',
-        }}
-      >
+    <div className={classes.root}>
+      <Paper square elevation={0} className={classes.header}>
         <Typography>{images[activeStep].label}</Typography>
       </Paper>
       <AutoPlaySwipeableViews
@@ -68,18 +79,7 @@ function SwipeableTextMobileStepper() {
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
-              <Box
-                component="img"
-                sx={{
-                  height: 300,
-                  display: 'block',
-                  maxWidth: 1200,
-                  overflow: 'hidden',
-                  width: '100%',
-                }}
-                src={step.imgPath}
-                alt={step.label}
-              />
+              <img className={classes.img} src={step.imgPath} alt={step.label} />
             ) : null}
           </div>
         ))}
@@ -87,32 +87,23 @@ function SwipeableTextMobileStepper() {
       <MobileStepper
         steps={maxSteps}
         position="static"
+        variant="dots"
         activeStep={activeStep}
         nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          >
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowLeft />
-            ) : (
-              <KeyboardArrowRight />
-            )}
+          <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+            
+            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
           </Button>
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
+            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+            
           </Button>
         }
       />
-    </Box>
+    </div>
   );
 }
 
-export default SwipeableTextMobileStepper;
+export default CarouselStepper;

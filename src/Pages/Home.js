@@ -18,14 +18,14 @@ import ContainedButtonsD from '../Components/Footer/DLT';
 import ContainedButtonsCU from '../Components/Footer/Contact';
 import FullWidthTabs from '../Components/Homepage/Tabmenu';
 import IconButtons from '../Components/Footer/Icons';
+import Grid from '@material-ui/core/Grid';
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
           <center>
-          <br/><br/><br/><br/>
-        <img src={Airtel} alt="airtel"/>
+        <img src={Airtel} alt="airtel" width="80%" height="80%"/>
         <br/>
         <FullWidthTabs/>  
         <br/>
@@ -43,7 +43,9 @@ export default function Home() {
           Entertainment
         </Typography>
         <br/>
+        <Grid item xs={12} sm={6} md={6} lg={12} xl={3}>
         <SingleLineImageList/>
+        </Grid>
         <br/>
         <SimpleCard5/>
         <br/>

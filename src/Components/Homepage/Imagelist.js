@@ -3,9 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
-//import itemData from './itemData';
 import image from './../../Assets/Homepage/Loki.png';
 import image2 from './../../Assets/Homepage/Rangbaaz.png';
 import image3 from './../../Assets/Homepage/Stories.png';
@@ -92,11 +89,6 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
             />
           </ImageListItem>
         ))}
@@ -109,11 +101,6 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
             />
           </ImageListItem>
         ))}
@@ -126,11 +113,6 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
             />
           </ImageListItem>
         ))}
@@ -143,11 +125,6 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
             />
           </ImageListItem>
         ))}
@@ -160,11 +137,6 @@ export default function SingleLineImageList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${item.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
             />
           </ImageListItem>
         ))}

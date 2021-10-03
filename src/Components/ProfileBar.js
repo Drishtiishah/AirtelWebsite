@@ -27,7 +27,7 @@ export default function MenuAppBar() {
         
          
       </FormGroup>
-      <AppBar position="fixed" color="default">
+      <AppBar position="static" color="default">
         <Toolbar>
         <IconButton
             size="large"

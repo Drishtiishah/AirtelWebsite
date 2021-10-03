@@ -43,7 +43,7 @@ export default function TemporaryDrawer() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, true)}
+      onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
@@ -70,8 +70,8 @@ export default function TemporaryDrawer() {
           <Drawer
             anchor={anchor}
             open={state[anchor]}
-           
             onClose={toggleDrawer(anchor, false)} 
+            onOpen={toggleDrawer(anchor,true)}         
           >
             {list(anchor)}
           </Drawer>

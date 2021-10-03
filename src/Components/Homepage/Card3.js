@@ -17,6 +17,7 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 14,
+    color: "white",
   },
   pos: {
     marginBottom: 12,
@@ -26,21 +27,21 @@ const useStyles = makeStyles({
 export default function SimpleCard3() {
   const classes = useStyles()
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} style={{flex:1, backgroundColor:'black'}}>
       <CardContent>
         <br/>
         <br/>
-        <Typography variant="h5" component="h2">
-          Airtel Black
+        <Typography variant="h2" color="white">
+          Black
         </Typography>
         <br/>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="white" gutterBottom>
           Enjoy first 30 days free of a new service with Airtel Black
         </Typography>
         <br/>
         <AirtelBlackButton/>
         <br/>
-        <img src={image} alt={image} />
+        <img src={image} alt={image} width="70%" height="70%"/>
       </CardContent>
       </Card>
   );
