@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AirtelWebsite/static/css/main.2eccbe74.chunk.css",
-    "main.js": "/AirtelWebsite/static/js/main.dcca94e5.chunk.js",
-    "main.js.map": "/AirtelWebsite/static/js/main.dcca94e5.chunk.js.map",
+    "main.js": "/AirtelWebsite/static/js/main.bf8c55cc.chunk.js",
+    "main.js.map": "/AirtelWebsite/static/js/main.bf8c55cc.chunk.js.map",
     "runtime-main.js": "/AirtelWebsite/static/js/runtime-main.366a34bc.js",
     "runtime-main.js.map": "/AirtelWebsite/static/js/runtime-main.366a34bc.js.map",
     "static/js/2.2f3dfcb6.chunk.js": "/AirtelWebsite/static/js/2.2f3dfcb6.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.366a34bc.js",
     "static/js/2.2f3dfcb6.chunk.js",
     "static/css/main.2eccbe74.chunk.css",
-    "static/js/main.dcca94e5.chunk.js"
+    "static/js/main.bf8c55cc.chunk.js"
   ]
 }
