@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -10,14 +12,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TextButtons() {
+export default function ContainedButtons() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Button href="#text-buttons" color="primary">
+      <Button variant="text" color="primary" href="https://drishtiishah.github.io/AirtelWebsite/">
         Back to home
       </Button>
+    
+
+  
     </div>
   );
 }

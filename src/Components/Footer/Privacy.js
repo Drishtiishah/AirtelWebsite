@@ -1,17 +1,28 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
-export default function ButtonLink2() {
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(0),
+    },
+  },
+}));
+
+export default function ContainedButtonsP() {
+  const classes = useStyles();
+
   return (
-    <Link
-      component="button"
-      variant="body2"
-      onClick={() => {
-        console.info("I'm a button.");
-      }}
-    >
-      PRIVACY POLICY
-    </Link>
+    <div className={classes.root}>
+      <Button variant="text" color="primary">
+        PRIVACY POLICY
+      </Button>
+    
+
+  
+    </div>
   );
 }

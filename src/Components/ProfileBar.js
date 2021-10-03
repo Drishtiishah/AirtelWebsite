@@ -2,39 +2,49 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
-import logo from '../Assets/Homepage/Logo.png'
+import FormGroup from '@mui/material/FormGroup';
+import image from './../Assets/Homepage/Logo.png';
+import { pink } from '@mui/material/colors';
+import TemporaryDrawer from './Homepage/Drawer';
+
 
 export default function MenuAppBar() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [auth] = React.useState(true);
+  const [setAnchorEl] = React.useState(null);
+
+  // eslint-disable-next-line no-unused-vars
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <FormGroup>
+        
+         
+      </FormGroup>
+      <AppBar position="fixed" color="default">
         <Toolbar>
-          <IconButton
+        <IconButton
             size="large"
             edge="start"
-            color="default"
+            color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            fontSize="large"
+            sx={{ color: pink[700] }}
+            
           >
-            <MenuIcon />
+            <TemporaryDrawer/>
           </IconButton>
-          
-          <img src={logo} alt={logo} component="div" sx={{ flexGrow: 1 }} class='center' />         
+         
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <img src={image} alt={image} height="65px" width="150px"/>
+          </Typography>
+          {auth && (
             <div>
               <IconButton
                 size="large"
@@ -44,29 +54,11 @@ export default function MenuAppBar() {
                 onClick={handleMenu}
                 color="inherit"
               >
-                <AccountCircle />
+                <AccountCircle sx={{ color: pink[700] }} />
               </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                align= 'right'
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <br/>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-              </Menu>
+              
             </div>
+          )}
         </Toolbar>
       </AppBar>
     </Box>

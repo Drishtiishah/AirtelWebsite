@@ -14,18 +14,19 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import CopyrightIcon from '@mui/icons-material/Copyright';
-import ButtonLink1 from '../Components/Footer/Important';
-import ButtonLink2 from '../Components/Footer/Privacy';
-import ButtonLink3 from '../Components/Footer/Cookie';
-import ButtonLink4 from '../Components/Footer/DLT';
-import ButtonLink5 from '../Components/Footer/Contact';
 import Airtel from '../Assets/Homepage/Airtel.png';
 import SingleLineImageList from '../Components/Homepage/Imagelist';
+import ContainedButtons from '../Components/Footer/Important';
+import ContainedButtonsP from '../Components/Footer/Privacy';
+import ContainedButtonsC from '../Components/Footer/Cookie';
+import ContainedButtonsD from '../Components/Footer/DLT';
+import ContainedButtonsCU from '../Components/Footer/Contact';
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
+          <br/><br/><br/><br/>
         <img src={Airtel} alt="airtel"/>
         <br/>
         <BasicTabs/>  
@@ -59,17 +60,11 @@ export default function Home() {
         <LinkedInIcon/>
         <TwitterIcon />
         <YouTubeIcon />
-        <br/>
-        <ButtonLink1/>
-        <br/>
-        <ButtonLink2/>
-        <br/>
-        <ButtonLink3/>
-        <br/>
-        <ButtonLink4/>
-        <br/>
-        <ButtonLink5/>
-        <br/>
+        <ContainedButtons/>
+        <ContainedButtonsP/>
+        <ContainedButtonsC/>
+        <ContainedButtonsD/>
+        <ContainedButtonsCU/>
         <p>
         <CopyrightIcon/> 2021 Airtel India. All Rights Reserved.
         </p> 

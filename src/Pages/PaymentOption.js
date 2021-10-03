@@ -17,9 +17,6 @@ const useStyles = makeStyles({
     title: {
       fontSize: 14,
     },
-    pos: {
-      marginBottom: 12,
-    },
   });
 
 export default function PaymentOption() {
