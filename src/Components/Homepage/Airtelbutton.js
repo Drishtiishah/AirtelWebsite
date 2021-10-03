@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,11 +15,9 @@ export default function AirtelBlackButton() {
 
   return (
     <div className={classes.root}>
-      <Link to={process.env.PUBLIC_URL + ''}>
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="secondary">
         Explore Airtel Black
       </Button>
-      </Link>
       
     </div>
   );

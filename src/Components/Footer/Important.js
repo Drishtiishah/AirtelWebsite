@@ -17,7 +17,7 @@ export default function ContainedButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="text" color="primary">
+      <Button variant="text" style={{color:'white'}}>
         IMPORTANT ALERTS
       </Button>
     

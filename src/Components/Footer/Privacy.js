@@ -17,7 +17,7 @@ export default function ContainedButtonsP() {
 
   return (
     <div className={classes.root}>
-      <Button variant="text" color="primary">
+      <Button variant="text" style={{color:'white'}}>
         PRIVACY POLICY
       </Button>
     

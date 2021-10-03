@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     display: 'inline-block',
     margin: '0 2px',
     transform: 'scale(0.8)',
+    color:'black',
   },
   title: {
     fontSize: 14,

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
+import { makeStyles } from '@material-ui/core/styles';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -17,6 +18,7 @@ export default function TemporaryDrawer() {
     right: false,
   });
 
+  
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
@@ -24,6 +26,18 @@ export default function TemporaryDrawer() {
 
     setState({ ...state, [anchor]: open });
   };
+
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      '& > *': {
+        [theme.breakpoints.up('md')]: {
+  
+        margin: theme.spacing(12),
+        },
+      },
+    },
+  }));
+  
 
   const list = (anchor) => (
     <Box

@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import AccountCircle from '@mui/icons-material/AccountCircle';
+import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import FormGroup from '@mui/material/FormGroup';
 import image from './../Assets/Homepage/Logo.png';
 import { pink } from '@mui/material/colors';
@@ -52,9 +52,9 @@ export default function MenuAppBar() {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleMenu}
-                color="inherit"
+                fontSize="large"
               >
-                <AccountCircle sx={{ color: pink[700] }} />
+                <PersonOutlineOutlinedIcon sx={{ color: pink[700] }} />
               </IconButton>
               
             </div>

@@ -17,7 +17,7 @@ export default function ContainedButtonsCU() {
 
   return (
     <div className={classes.root}>
-      <Button variant="text" color="primary">
+      <Button variant="text" style={{color:'white'}}>
         CONTACT US
       </Button>
     
