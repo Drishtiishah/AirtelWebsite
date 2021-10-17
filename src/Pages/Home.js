@@ -18,36 +18,59 @@ import ContainedButtonsD from '../Components/Footer/DLT';
 import ContainedButtonsCU from '../Components/Footer/Contact';
 import FullWidthTabs from '../Components/Homepage/Tabmenu';
 import IconButtons from '../Components/Footer/Icons';
+import Grid from '@material-ui/core/Grid';
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
           <center>
+          <Grid container spacing={3}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <img src={Airtel} alt="airtel" width="80%" height="80%"/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <FullWidthTabs/>  
-        <br/>
+        </Grid>
+
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <SwipeableTextMobileStepper/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
         <SimpleCard1/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
         <SimpleCard2/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <SimpleCard3/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <SimpleCard4/>
-        <br/>
+        </Grid>
+        
         <Typography variant="h5" component="h2">
           Entertainment
         </Typography>
-        <br/>
+        
+        <Grid item xs={12} sm={12} md={12} lg={15} xl={15}>
         <SingleLineImageList/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <SimpleCard5/>
-        <br/>
+        </Grid>
+        
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <ButtonLink/>
-        <br/>
+        </Grid>
+        
+        </Grid>
         </center>
         </Container>
 

@@ -26,14 +26,14 @@ export default function SimpleCard2() {
   const classes = useStyles()
   return (
     <Card className={classes.root}>
-      <CardContent>
+      <CardContent style={{ backgroundColor: '#8e0202' }}>
         <br/>
         <br/>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="white" gutterBottom>
           Airtel Unlimited Postpaid
         </Typography>
         <br/>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5" component="h2" color="white">
           Airtel Postpaid starting at ₹499
         </Typography>
         <br/>

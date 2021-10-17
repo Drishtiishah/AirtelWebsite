@@ -26,7 +26,7 @@ export default function SimpleCard1() {
   const classes = useStyles()
   return (
     <Card className={classes.root}>
-      <CardContent>
+       <CardContent style={{ backgroundColor: '#8e0202' }}>
         <br/>
         <br/>
         <Typography className={classes.title} color="textSecondary" gutterBottom>

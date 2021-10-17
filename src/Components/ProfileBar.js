@@ -29,7 +29,7 @@ export default function MenuAppBar() {
       </FormGroup>
       <AppBar position="static" color="default">
         <Toolbar>
-        <IconButton
+        <IconButton style={{color:'#CC011B'}}
             size="large"
             edge="start"
             color="inherit"
@@ -46,7 +46,7 @@ export default function MenuAppBar() {
           </Typography>
           {auth && (
             <div>
-              <IconButton
+              <IconButton style={{color:'#CC011B'}}
                 size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"

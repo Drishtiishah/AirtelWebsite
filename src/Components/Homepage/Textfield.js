@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default function InputAdornments() {
     const classes = useStyles();
   return (
+    <center>
     <div className={classes.root}>
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
         <TextField
@@ -28,10 +29,12 @@ export default function InputAdornments() {
             startAdornment: <InputAdornment position="start">+91</InputAdornment>,
           }}
         />
+
     <Button variant="contained" color="primary" href="https://drishtiishah.github.io/AirtelWebsite/PaymentOption">
     Recharge
     </Button>
     </Box>
     </div>
+    </center>
   );
 }

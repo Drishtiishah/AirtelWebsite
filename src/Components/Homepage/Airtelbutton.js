@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
+      borderRadius: 28
     },
   },
 }));
@@ -15,7 +16,7 @@ export default function AirtelBlackButton() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" color="secondary">
+      <Button variant="contained" color="secondary" style={{ backgroundColor: '#8e0202' }}>
         Explore Airtel Black
       </Button>
       

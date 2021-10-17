@@ -43,6 +43,7 @@ function a11yProps(index) {
 }
 
 export default function FullWidthTabs() {
+  
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -55,13 +56,14 @@ export default function FullWidthTabs() {
   };
 
   return (
+    <center>
     <Box sx={{ bgcolor: 'background.paper'}}>
       <AppBar position="relative">
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="secondary"
-          textColor="inherit"
+          indicatorColor="primary"
+          textColor="primary"
           variant="fullWidth"
           aria-label="full width tabs example"
         >
@@ -90,5 +92,6 @@ export default function FullWidthTabs() {
         </TabPanel>
       </SwipeableViews>
     </Box>
+    </center>
   );
 }
