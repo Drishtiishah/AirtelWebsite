@@ -3,13 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import image from '../../Assets/Homepage/AppStore.png'
-import image1 from '../../Assets/Homepage/GooglePlay.png'
-import image3 from '../../Assets/Homepage/Phone.png'
+import { Grid } from '@material-ui/core';
+import Appstore from './Appstore';
+import Googlebutton from './Googlebutton';
+import AirtelThanks from '../../Assets/Homepage/AirtelThanks.png';
+import image from '../../Assets/Homepage/Phone.png';
 
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
+    background: 'linear-gradient(#d2001a, #8f0000 ,#000000,#000000)',
   },
   bullet: {
     display: 'inline-block',
@@ -28,32 +31,32 @@ const useStyles = makeStyles({
 export default function SimpleCard5() {
   const classes = useStyles()
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} variant="outlined">
       <CardContent>
-          <br/>
-          <br/>
-      <Typography className={classes.title} color="textSecondary" gutterBottom>
+      <Grid container spacing={1}>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <Typography style={{color:'white'}} margin="normal" align={'center'}>
          Experience the all new Airtel Thank App
         </Typography>
-        <br/>
-        <Typography variant="h5" component="h2">
-         # Airtel Thanks
+        </Grid>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <img src={AirtelThanks} alt={AirtelThanks}/>
+        </Grid>
+        <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+        <img src={image} alt={image} width="50%" height= "100%"/>
+        </Grid>
+        <Grid item xs={6} sm={6} md={3} lg={3} xl={3}>
+        <Typography style={{color:'#ffffff'}} align={'right'} >
+          Get exclusive offers and account information at one place 
         </Typography>
-        <br/>
-        <img src={image3} alt={image3} align="left"/>
-        <Typography className={classes.title} color="textSecondary" gutterBottom align="right">
-        Get exclusive offers and <br/> account information <br/> at one place
-        </Typography>
-        <br/>
-        <Typography className={classes.title} color="textSecondary" gutterBottom align="right">
-        Download Airtel Thanks App on
-        </Typography>
-        <br/>
-        <img src={image} alt={image} />
-        <img src={image1} alt={image1} />
-        <br/>
-        <br/>
-        <br/>
+        </Grid>
+        <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+          <Googlebutton/>
+        </Grid>
+        <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+          <Appstore/>
+          </Grid>
+          </Grid>
       </CardContent>
     </Card>
   );

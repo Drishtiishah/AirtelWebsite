@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
             maxWidth: 1200,
             flexGrow: 1,
+            
       },
     },
   }));
@@ -24,14 +25,14 @@ export default function InputAdornments() {
         <TextField
           label="Mobile Number"
           id="outlined-start-adornment"
-          sx={{ m: 1, width: '30ch', height: '4ch' }}
+          sx={{ width: '30ch', height: '4ch' }}
           InputProps={{
             startAdornment: <InputAdornment position="start">+91</InputAdornment>,
           }}
         />
 
-    <Button variant="contained" color="primary" href="https://drishtiishah.github.io/AirtelWebsite/PaymentOption">
-    Recharge
+    <Button variant="contained" color="primary" size="large" style={{ backgroundColor: '#8e0202' }} href="https://drishtiishah.github.io/AirtelWebsite/PaymentOption">
+    Recharge 
     </Button>
     </Box>
     </div>

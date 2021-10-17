@@ -62,15 +62,14 @@ export default function FullWidthTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
+          indicatorColor="secondary" 
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Prepaid" {...a11yProps(0)} />
-          <Tab label="Postpaid" {...a11yProps(1)} />
-          <Tab label="DTH" {...a11yProps(2)} />
-          <Tab label="Broadband" {...a11yProps(3)} />
+          <Tab label="Prepaid" style={{ color: '#720001' }} {...a11yProps(0)} />
+          <Tab label="Postpaid" style={{ color: '#720001' }} {...a11yProps(1)} />
+          <Tab label="DTH" style={{ color: '#720001' }} {...a11yProps(2)} />
+          <Tab label="Broadband" style={{ color: '#720001' }} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews

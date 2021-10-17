@@ -29,11 +29,11 @@ export default function SimpleCard2() {
       <CardContent style={{ backgroundColor: '#8e0202' }}>
         <br/>
         <br/>
-        <Typography className={classes.title} color="white" gutterBottom>
+        <Typography className={classes.title} style={{color:'white'}} gutterBottom>
           Airtel Unlimited Postpaid
         </Typography>
         <br/>
-        <Typography variant="h5" component="h2" color="white">
+        <Typography variant="h5" component="h2" style={{color:'white'}}>
           Airtel Postpaid starting at ₹499
         </Typography>
         <br/>

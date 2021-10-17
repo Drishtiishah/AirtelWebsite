@@ -17,7 +17,7 @@ export default function ContainedButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" color="primary" href="">
+      <Button variant="contained" color="primary" style={{color:'#CC011B'}}>
         Get OTP
       </Button>
     
