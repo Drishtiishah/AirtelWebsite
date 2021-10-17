@@ -42,7 +42,7 @@ export default function SimpleCard() {
         </Typography>
         <br/>
         <br/>
-        <CheckIcon/>
+        <CheckIcon fontSize="large" style={{ fontSize: 180 , color:'#CC011B' }} color="secondary"/>
         <br/>
         <br/>
         <Typography className={classes.pos} color="textSecondary">

@@ -17,7 +17,7 @@ export default function ContainedButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="text" color="primary" href="https://drishtiishah.github.io/AirtelWebsite/">
+      <Button variant="text" color="secondary" href="https://drishtiishah.github.io/AirtelWebsite/">
         Back to home
       </Button>
     

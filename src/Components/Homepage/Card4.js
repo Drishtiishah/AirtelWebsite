@@ -7,7 +7,7 @@ import image from '../../Assets/Homepage/logoo.png';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 350,
   },
   bullet: {
     display: 'inline-block',

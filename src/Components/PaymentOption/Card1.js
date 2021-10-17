@@ -30,7 +30,7 @@ export default function SimpleCard() {
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Postpaid Bill | 93211112989
         </Typography>
-        <SimpleAccordion/>
+        <SimpleAccordion align={'right'}/>
     
       </CardContent>
       
