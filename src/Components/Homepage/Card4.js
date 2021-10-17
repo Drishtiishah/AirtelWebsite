@@ -7,7 +7,7 @@ import image from '../../Assets/Homepage/logoo.png';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 350,
+    minWidth: 400,
   },
   bullet: {
     display: 'inline-block',
@@ -27,7 +27,6 @@ export default function SimpleCard4() {
   return (
     <Card className={classes.root}>
       <CardContent style={{ backgroundColor: '#8e0202' }}>
-        <br/>
         <img src={image} alt={image} width= '10%' height='10%' align='left' />
         <Typography variant="h5" component="h2" style={{color:'white'}}>
          Open an Airtel Money Wallet
