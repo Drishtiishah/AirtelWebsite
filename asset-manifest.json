@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AirtelWebsite/static/css/main.53eda0f6.chunk.css",
-    "main.js": "/AirtelWebsite/static/js/main.0b765e84.chunk.js",
-    "main.js.map": "/AirtelWebsite/static/js/main.0b765e84.chunk.js.map",
+    "main.js": "/AirtelWebsite/static/js/main.1255ef5c.chunk.js",
+    "main.js.map": "/AirtelWebsite/static/js/main.1255ef5c.chunk.js.map",
     "runtime-main.js": "/AirtelWebsite/static/js/runtime-main.366a34bc.js",
     "runtime-main.js.map": "/AirtelWebsite/static/js/runtime-main.366a34bc.js.map",
-    "static/js/2.ad4ff5a6.chunk.js": "/AirtelWebsite/static/js/2.ad4ff5a6.chunk.js",
-    "static/js/2.ad4ff5a6.chunk.js.map": "/AirtelWebsite/static/js/2.ad4ff5a6.chunk.js.map",
+    "static/js/2.ba9abed2.chunk.js": "/AirtelWebsite/static/js/2.ba9abed2.chunk.js",
+    "static/js/2.ba9abed2.chunk.js.map": "/AirtelWebsite/static/js/2.ba9abed2.chunk.js.map",
     "index.html": "/AirtelWebsite/index.html",
     "static/css/main.53eda0f6.chunk.css.map": "/AirtelWebsite/static/css/main.53eda0f6.chunk.css.map",
-    "static/js/2.ad4ff5a6.chunk.js.LICENSE.txt": "/AirtelWebsite/static/js/2.ad4ff5a6.chunk.js.LICENSE.txt",
+    "static/js/2.ba9abed2.chunk.js.LICENSE.txt": "/AirtelWebsite/static/js/2.ba9abed2.chunk.js.LICENSE.txt",
     "static/media/Airtel.2d063417.png": "/AirtelWebsite/static/media/Airtel.2d063417.png",
     "static/media/Airtell.3c9aeb43.png": "/AirtelWebsite/static/media/Airtell.3c9aeb43.png",
     "static/media/Airtelpay.23efae34.jpg": "/AirtelWebsite/static/media/Airtelpay.23efae34.jpg",
@@ -19,12 +19,13 @@
     "static/media/Paytm.2df6d303.jpg": "/AirtelWebsite/static/media/Paytm.2df6d303.jpg",
     "static/media/Rangbaaz.532820b3.png": "/AirtelWebsite/static/media/Rangbaaz.532820b3.png",
     "static/media/Stories.9ece6236.png": "/AirtelWebsite/static/media/Stories.9ece6236.png",
-    "static/media/image.60daa075.png": "/AirtelWebsite/static/media/image.60daa075.png"
+    "static/media/image.60daa075.png": "/AirtelWebsite/static/media/image.60daa075.png",
+    "static/media/logoo.20c69a28.png": "/AirtelWebsite/static/media/logoo.20c69a28.png"
   },
   "entrypoints": [
     "static/js/runtime-main.366a34bc.js",
-    "static/js/2.ad4ff5a6.chunk.js",
+    "static/js/2.ba9abed2.chunk.js",
     "static/css/main.53eda0f6.chunk.css",
-    "static/js/main.0b765e84.chunk.js"
+    "static/js/main.1255ef5c.chunk.js"
   ]
 }
