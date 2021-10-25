@@ -41,7 +41,7 @@ export default function SimpleCard3() {
         <br/>
         <AirtelBlackButton/>
         <br/>
-        <img src={image} alt={image} width="70%" height="70%"/>
+        <img src={image} alt={image} width="100" height="100"/>
       </CardContent>
       </Card>
   );

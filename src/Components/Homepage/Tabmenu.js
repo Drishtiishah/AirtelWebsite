@@ -8,6 +8,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import InputAdornments from './Textfield';
+import Grid from '@material-ui/core/Grid';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -65,6 +66,7 @@ export default function FullWidthTabs() {
           indicatorColor="secondary" 
           variant="fullWidth"
           aria-label="full width tabs example"
+          textColor="Secondary"
         >
           <Tab label="Prepaid" style={{ color: '#720001' }} {...a11yProps(0)} />
           <Tab label="Postpaid" style={{ color: '#720001' }} {...a11yProps(1)} />
@@ -77,6 +79,7 @@ export default function FullWidthTabs() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
+         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <TabPanel value={value} index={0} dir={theme.direction}>
           <InputAdornments/>
         </TabPanel>
@@ -89,6 +92,7 @@ export default function FullWidthTabs() {
         <TabPanel value={value} index={3} dir={theme.direction}>
           <InputAdornments/>
         </TabPanel>
+        </Grid>
       </SwipeableViews>
     </Box>
     </center>

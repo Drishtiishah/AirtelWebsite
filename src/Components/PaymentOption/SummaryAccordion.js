@@ -23,22 +23,22 @@ export default function SimpleAccordion() {
   return (
     <div className={classes.root}>
       <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+        <AccordionSummary style={{ backgroundColor: '#8e0202' }}
+          expandIcon={<ExpandMoreIcon style={{color:'white'}} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>View Details </Typography>
+          <Typography className={classes.heading} style={{color:'white'}}>View Details </Typography>
         </AccordionSummary>
         
-        <AccordionDetails>
-          <Typography>
+        <AccordionDetails style={{ backgroundColor: '#8e0202' }}>
+          <Typography  style={{color:'white'}}>
             Bill 
           </Typography>
         </AccordionDetails>
 
-          <AccordionDetails>
-          <Typography className={classes.heading}>Amount Payable </Typography>
+          <AccordionDetails style={{ backgroundColor: '#8e0202' }}>
+          <Typography className={classes.heading} style={{color:'white'}}>Amount Payable </Typography>
           </AccordionDetails>
       </Accordion>
     </div>

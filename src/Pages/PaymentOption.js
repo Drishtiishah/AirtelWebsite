@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import ControlledAccordions from '../Components/PaymentOption/Accordion';
 import SimpleCard from '../Components/PaymentOption/Card1';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles({
@@ -23,21 +24,26 @@ export default function PaymentOption() {
     const classes = useStyles();
     return (
         <React.Fragment>
-<br/><br/><br/>
+       <Grid container spacing={3}>
+<Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
 <SimpleCard/>
-<br/>
-<Typography variant="h5" component="h2">
+</Grid>
+
+<Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+<Typography variant="h5" component="h2" style={{color:'#8e0202'}}>
           Payment Method
         </Typography>
-<br/>
+
 <ControlledAccordions/>
-<br/>
-<Typography className={classes.pos} color="textSecondary">
+
+<Typography className={classes.pos} style={{color:'#8e0202'}}>
           Don't worry your money is safe
         </Typography>
-<Typography className={classes.pos} color="textSecondary">
+<Typography className={classes.pos} style={{color:'#8e0202'}}>
           100% secured Payments
         </Typography>
+        </Grid>
+        </Grid>
 </React.Fragment>
     )
     

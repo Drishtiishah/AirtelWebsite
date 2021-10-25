@@ -26,11 +26,11 @@ export default function Home() {
         <Container fixed>
           <center>
           <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
         <img src={Airtel} alt="airtel" width="80%" height="80%"/>
         </Grid>
         
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
         <FullWidthTabs/>  
         </Grid>
 
